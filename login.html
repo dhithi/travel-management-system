@@ -1,0 +1,81 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+	<title>Login Page</title> 
+	<style>
+		body {
+		background:url(images/background/eiffel1.jpg);
+		}
+		.logo {
+			background-image: url("img/ogo.jpg");
+			height: 1000px;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			position: relative;
+		}
+		.container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+		}
+		
+		form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		}
+		label {
+		display: block;
+		margin-bottom: 5px;
+		}
+		
+		input[type="text"],
+		input[type="email"],
+		input[type="password"] {
+		width: 100%;
+		padding: 10px;
+		margin-bottom: 20px;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		}
+		input[type="submit"] {
+		background-color: rgb(241, 240, 241);
+		color: rgb(19, 16, 16);
+		padding: 10px 20px;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		}
+		
+		input[type="submit"]:hover {
+		background-color: rgb(192, 175, 192);
+		}
+		
+	</style>	 
+</head> 
+
+<body> 
+	<div class="container"> 
+		<h1 style="color: aliceblue;">Login Page</h1> 
+		<form method="post"action="login.php"> 
+
+			<label style="color: aliceblue;" for="username">Username:</label> 
+			<input type="text"id="username"name="username" required> 
+
+			<label style="color:aliceblue" for="password">Password:</label> 
+			<input type="password"id="password"name="password" required> 
+
+			<input style="color: rgb(40, 42, 60);" type="submit"value="Login"> 
+		</form> 
+		<br><br> 
+		<p style="color: aliceblue;"> Does not have an account? 
+			<a style="color: rgb(196, 208, 255);" href="register.html">Click Here</a> 
+		</p> 
+	</div> 
+</body> 
+
+</html>
