@@ -1,0 +1,99 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+	<title>Registration Page</title> 
+	<style>
+   body {
+    background:url(images/background/eiffel1.jpg);
+    object-fit: fill;
+
+    }
+    .logo {
+        background-image: url("img/ogo.jpg");
+        height: 1000px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    }
+    
+    form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    label {
+    display: block;
+    margin-bottom: 5px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    }
+    input[type="submit"] {
+    background-color: rgb(255, 246, 255);
+    color: rgb(20, 20, 20);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+    background-color: rgb(247, 189, 247);
+    }
+    
+	</style> 
+</head> 
+
+<body> 
+	<div class="container"> 
+		<h1 style="color:aliceblue">Registration Page</h1> 
+		<form method="post" action="register.php"> 
+			<label style="color: aliceblue;" for="name"> 
+				Name: 
+			</label> 
+			<input type="text"
+				id="name"
+				name="name" required> 
+
+			<label style="color: aliceblue;" for="username"> 
+				Username: 
+			</label> 
+			<input type="text"
+				id="username"
+				name="username" required> 
+
+			<label style="color: aliceblue;" for="email">Email:</label> 
+			<input type="email"
+				id="email"
+				name="email" required> 
+
+			<label style="color: aliceblue;" for="password">Password:</label> 
+			<input type="password"
+				id="password"
+				name="password" required> 
+
+			<input type="submit"
+				value="Register" style="color:rgb(20, 28, 34)"> 
+		</form> 
+		<p style="color:aliceblue"> Already have an account?</p> 
+		<a style="color:aliceblue" href="login.html">Click Here</a> 
+	</div> 
+	<br> 
+</body> 
+</html>
